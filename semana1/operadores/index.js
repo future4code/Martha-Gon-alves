@@ -30,21 +30,21 @@ EX - com o codigo correto: 1+1 =2 */
 //--------------------ExerciciDeEscritaDeCodigo------------------
 //---------------------Exercicio1--------------------------------
 
-const idadeUsuario = Number (prompt("Qual é a sua idade?"))
-const idadeMelhorAmiga = Number (prompt("Qual é a idade da sua melhor amiga?"))
+// const idadeUsuario = Number (prompt("Qual é a sua idade?"))
+// const idadeMelhorAmiga = Number (prompt("Qual é a idade da sua melhor amiga?"))
 
-const comparandoAsIdades = idadeUsuario === idadeMelhorAmiga
+// const comparandoAsIdades = idadeUsuario === idadeMelhorAmiga
 
-console.log("Sua idade é maior do que a do seu melhor amigo?", comparandoAsIdades)
+// console.log("Sua idade é maior do que a do seu melhor amigo?", comparandoAsIdades)
 
-const diferencaDeIdade = idadeUsuario - idadeMelhorAmiga
+// const diferencaDeIdade = idadeUsuario - idadeMelhorAmiga
 
-console.log("Eu e minha melhor amiga temos", diferencaDeIdade, "de diferença de idade!")
+// console.log("Eu e minha melhor amiga temos", diferencaDeIdade, "de diferença de idade!")
 //----------------------Exercicio2-------------------------------
 
-const numeroPar = Number (prompt("Insira um  numero par!"))
+// const numeroPar = Number (prompt("Insira um  numero par!"))
 
-console.log(numeroPar / 2 )
+// console.log(numeroPar / 2 )
 
 /* 
 Comentario 1 - o padrao é que o resultado sempre vai ser a metade do numero. 
@@ -57,12 +57,12 @@ o numero para 2, mesmo que quebrando um numero
 
 
 //----------------------Exercicio3------------------------------
-const anosDeIdade  = Number (prompt("Insira aqui quantos anos de vida voce tem?"))
+// const anosDeIdade  = Number (prompt("Insira aqui quantos anos de vida voce tem?"))
 
-console.log("--) A idade do usuário em anos", anosDeIdade)
-console.log("a) A idade do usuário em meses", anosDeIdade * 12)
-console.log("b) A idade do usuário em dias", anosDeIdade * 365)
-console.log("c) A idade do usuário em horas", anosDeIdade * 8760)
+// console.log("--) A idade do usuário em anos", anosDeIdade)
+// console.log("a) A idade do usuário em meses", anosDeIdade * 12)
+// console.log("b) A idade do usuário em dias", anosDeIdade * 365)
+// console.log("c) A idade do usuário em horas", anosDeIdade * 8760)
 
 //---------------------Exercicio4----------------------------
 const numero1 = Number (prompt("Digite um numero"))
@@ -71,7 +71,7 @@ const  numero2 = Number (prompt("Digite outro numero"))
 const comparandoNumeros0 = numero1 > numero2
 const comparandoNumeros1 = numero1 === numero2
 const comparandoNumeros2 = numero1 % numero2 === 0
-const comparandoNumeros3 = numero2 % numero1 === 0
+const comparandoNumeros3 = numero2 % numero1 !== 0
 
 
 
