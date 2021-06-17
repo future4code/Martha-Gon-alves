@@ -1,0 +1,62 @@
+//-----------------Exercicio1---------------------------------------------------
+function imprimirOlaMundo(){
+    console.log("Ola turma loveLace!")
+}
+
+imprimirOlaMundo()
+imprimirOlaMundo()
+imprimirOlaMundo()
+
+//-------------------Exercicio2----------------------------------------------------
+function imprimeOlaPessoa(nome, idade){
+    console.log("Olá", nome) //com a virgula apenas no console ele adiciona espaço
+    console.log("Olá" + nome) // concatenaçao de estrings, precisamos adicionar os espaços
+    console.log(`Olá ${nome} sua idade é ${idade}`) //template string
+    
+}
+
+imprimeOlaPessoa("Martha", 22)
+imprimeOlaPessoa("Ed", 26)
+imprimeOlaPessoa("Lucia", 50)
+imprimeOlaPessoa()
+
+const nomeProf = "Chijo"
+imprimeOlaPessoa(nomeProf, 27)
+
+
+const nomeInserido = prompt("Insira o seu nome")
+const idadeInserida = prompt ("Insira a sua idade")
+imprimeOlaPessoa(nomeInserido, idadeInserida)
+
+
+//--------------------Exercicio3-------------------------------------------------------
+
+function somandoDoisNumeros(num1, num2){
+    const soma = num1 + num2
+    return soma
+
+    console.log("oi")
+}
+
+const resultado = somandoDoisNumeros(2, 3)
+console.log("resultado da soma: ", resultado)
+
+const novoResultado = resultado + 3
+console.log("resultado + 3", novoResultado)
+
+imprimeOlaPessoa("Chijo", resultado)
+console.log(soma)
+
+//--------------------Exercicio4------------------------------
+function retornaExtremidadesDividasPor2(arrayDeNumeros){
+    const primeiroElemento = arrayDeNumeros [0] / 2
+    const ultimoElemento = arrayDeNumeros[arrayDeNumeros.length -1] / 2
+    const novoArray = [primeiroElemento, ultimoElemento]
+    return novoArray
+}
+
+const resultado1 = retornaExtremidadesDividasPor2([2, 3, 6])
+const resultado2 = retornaExtremidadesDividasPor2([40, 68, 70, 3, 90 ])
+
+console.log(resultado1)
+console.log(resultado2)
