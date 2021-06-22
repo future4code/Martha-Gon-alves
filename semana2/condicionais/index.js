@@ -94,10 +94,59 @@ if (idadeParaDirigir >= 18) {
 
 //EXERCICIO 02--------------->
 
-const qualTurno = Number(prompt("Olá aluno!! Em qual turno você estudo?"))
+const qualTurno = prompt("Olá aluno!! Em qual turno você estudo? Digite 'M' para matutino, V para vespertino e N para noturno")
 
-if (qualTurno === M) {
+
+if (qualTurno === "M") {
+
     console.log("Bom dia Aluno(a)!!!")
-} else if (qualTurno === V){
+} 
+else if (qualTurno === "V"){
+
     console.log("Boa tarde Aluno(a)!!!")
+
+} 
+else if (qualTurno === "N") {
+    console.log("Boa noite Aluno(a)!!!")
+}
+
+//EXERCICIO 03--------------->
+const qualTurno2 = prompt("Olá aluno!! Em qual turno você estudo? Digite 'M' para matutino, V para vespertino e N para noturno")
+
+switch (qualTurno2){
+    case "M":
+        console.log("Bom dia Aluno(a)!!!")
+        break;
+    case "V":
+        console.log("Boa tarde Aluno(a)!!!")
+        break;
+    case "N":
+        console.log("Boa noite Aluno(a)!!!")
+        break;
+}
+
+
+//EXERCICIO 04--------------->
+
+let filme = prompt("Qual genero de filme vocês vao assistir?")
+let preco = prompt("Qual é o preço do ingresso?")
+
+
+if (filme === "fantasia" && preco <= 16) {
+        console.log("Bom filme!")
+} else {
+    console.log("Escolha outro filme :(");
+}
+
+//DESAFIO ----------------->
+
+let filme = "Qual genero de filme vocês vao assistir?"
+let preco = "Qual é o preço do ingresso"
+let lanchinho = "Qual lanchinho você gostaria de comprar"
+
+
+if (filme === "fantasia" && preco <= 15) {
+        console.log("Bom filme!")
+} else {
+    console.log("Escolha outro filme :(");
 }
