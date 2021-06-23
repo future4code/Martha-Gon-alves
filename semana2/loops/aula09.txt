@@ -1,0 +1,176 @@
+//EXEMPLOS --------------------------------------------------------
+//EXEMPLO1 --------------------------------------------------------
+// console.log("Dei 1 volta no quarteirão")
+// console.log("Dei 2 volta no quarteirão")
+// console.log("Dei 3 volta no quarteirão")
+// console.log("Dei 4 volta no quarteirão")
+// console.log("Dei 5 volta no quarteirão")
+// console.log("Dei 6 volta no quarteirão")
+// console.log("Dei 7 volta no quarteirão")
+// console.log("Dei 8 volta no quarteirão")
+// console.log("Dei 9 volta no quarteirão")
+// console.log("Dei 10 volta no quarteirão")
+
+// let voltasNoQuarteirao = 0
+
+// function daVoltaNoQuarteirao = () => {
+//     voltasNoQuarteirao = voltasNoQuarteirao + 1
+//     console.log(`Dei ${voltasNoQuarteirao} voltas no quarteirão`)
+// }
+
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+// daVoltaNoQuarteirao()
+
+// while(voltasNoQuarteirao < 10){
+//     daVoltaNoQuarteirao()
+// }
+
+// let i = 0
+
+// while (i < 10){
+//     console.log(i)
+//     i++ //serve apenas para add 1 number 
+    //i--
+    //i = i + i - essa sintaxe serve para adicionar numeros maiores que 1
+    // i += 2 - essa sintaxe serve para adicionar numeros maiores que 1
+//}
+
+//------------------------------------------
+//EXEMPLO2 --------------------------------------------------------
+
+// let estomago = 0
+
+// while (estomago < 100){
+//     console.log("Quero comer mais coxinhas!!")
+//     estomago = estomago + 10
+//     //estomago += 10 - poderia ser assim 
+// }
+
+// console.log("COMI DEMAIS " #1F628)
+
+//------------------------------------------
+//EXEMPLO3 --------------------------------------------------------
+
+for (let i = 0; i < 10; i++){
+    console.log(i)
+}
+//--------
+const numeros = [14, 67, 89, 15 ,23]
+
+for(let i = 0; i < 5; i++){
+    const elemento = numeros [i]
+    console.log(elemento)
+}
+
+//for so serve paea numeros
+//--------
+
+let i = 0
+
+while (i < 5){
+    const elemento = numero[i]
+    console.log(elemento)
+    i++
+}
+
+//------------------------------------------
+//EXEMPLO4 --------------------------------------------------------
+
+const numeros = [14, 67, 89, 15, 23]
+
+//For of serve so para mexer com arrays/listas
+for(let numero of numero){
+        console.log(numero)
+
+}
+
+//------------------------------------------
+//EXEMPLO5 --------------------------------------------------------
+
+
+
+
+//------------------------------------------
+//EXERCICIO DE AULA 1 --------------------------------------------------------
+
+let numero 
+let soma = 0
+
+// numero = Number (prompt("Digite um número!!")) - o prompt do lado de fora repte 1 vez so
+
+
+while(numero !== 0){
+    numero = Number (prompt("Digite um número!!"))
+    soma += numero
+    //soma = soma + numero
+    //console.log(soma)  //imprime todos os passsos 
+}
+
+console.log(soma)  //resultado final
+
+//------------------------------------------
+//EXERCICIO DE AULA 2 --------------------------------------------------------
+
+
+const retornaMaiorNumero = (arrayDeNumeros) => {
+    let maiorNumero = 0
+    const tam = arrayDeNumeros.length
+
+     for (let i = 0; i < tam; i++){
+         const numeroAtual = arrayDeNumeros[i]
+            if(numeroAtual > maiorNumero){
+                maiorNumero = numeroAtual
+            }
+     }
+     return maiorNumero
+}
+
+const maior1 = retornaMaiorNumero([11,15,18,14,12,13])
+console.log(maior1)
+
+const maior2 = retornaMaiorNumero([10,2,100,3])
+console.log(maior2)
+
+//EXERCICIO DE AULA 2.2 --------------------------------------------------------
+const retornaMaiorNumero2 = (arrayDeNumeros) => {
+    let maiorNumero = 0
+    const tam = arrayDeNumeros.length 
+
+    for(let num of arrayDeNumeros){
+        if(num > maiorNumero){
+            maiorNumero = num
+        }
+    }
+    return maiorNumero
+}
+
+const maior1 = retornaMaiorNumero2([11,15,18,14,12,13])
+console.log(maior1)
+
+const maior2 = retornaMaiorNumero2([10,2,100,3])
+console.log(maior2)
+
+//EXERCICIO DE AULA 3 --------------------------------------------------------
+
+const imprimeFrase = () => {
+    let mensagem = ""
+    for(let palavra of arrayDePalavras){
+        //mensagem = mensagem + palavra + " "
+        mensagem += palavra + " "
+    }
+
+    //const mensagemComAspas = 
+    console.log(mensagem)
+}
+
+imprimeFrase (["Oi", "Sumido", "Tudo,", "bem?", "Saudades"])
+imprimeFrase (["Bom", "dia", "loveLace"])
+
