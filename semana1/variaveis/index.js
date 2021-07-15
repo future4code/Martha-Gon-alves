@@ -39,7 +39,7 @@ console.log("Olá", nome, "Voce tem", idade, "anos")*/
 /*----- Resposta 1 - O valor apresentado foi "undefined" ele se deu por conta da variaveiss que foram
 criadas sem um valor definido.*/
 
-/*
+
 ----- Resposta2 - Asssim que adicionei valor ás variaveis eles pacaram a ter um "tipo de dado" diferente.
 O tipo de ddado apresentado foi "String"; Pois no erxercio foi pedido que adicionacem perguntas no local
 onde se coloca o valor, para adicionar uma pergunta/nome/frase e etc devemos coloca-las entre aspas. E a 
@@ -47,7 +47,7 @@ partitir disso é que se define o que é uma string!
 
 //-----------------EXERCICIO2---------------------
 
-/*const tenisAmarelo = "Voce tem um tenis amarelo?"
+const tenisAmarelo = "Voce tem um tenis amarelo?"
 const copoRosa = "Voce tem um copo rosa?"
 const roupaoRosa = "Voce tem um roupao rosa?"
 
@@ -58,11 +58,11 @@ const tenho2 = "SIM."
 console.log(tenisAmarelo,tenho1)
 console.log(copoRosa,naoTenho)
 console.log(roupaoRosa,tenho2)
-console.log(tenisAmarelo,tenho1,copoRosa,naoTenho,roupaoRosa,tenho2)*/
+console.log(tenisAmarelo,tenho1,copoRosa,naoTenho,roupaoRosa,tenho2)
 
 //---------------EXERCICIO3------------
 
-/*let a = 10
+let a = 10
 let b = 25
 
 console.log("O  valor de a é", a)
@@ -73,22 +73,21 @@ b = 10
 c = 10
 
 console.log("O novo valor de a é", a)
-console.log("O novo valor de b é", b)*/
+console.log("O novo valor de b é", b)
 
 
 //---------------DESAFIO---------
 
-//const numero1 = 2
-//const numero2 = 5
+const numero1 = 2
+const numero2 = 5
 
-//const somaDosNumeros = numero1 + numero2
+const somaDosNumeros = numero1 + numero2
 
-//console.log("resultado: ", somaDosNumeros)
+console.log("resultado: ", somaDosNumeros)
 
-//const numero3 = 2
-//const numero4 = 5
+const numero3 = 2
+const numero4 = 5
 
-//const multiplicacaoDosNumeros = numero3 * numero4
+const multiplicacaoDosNumeros = numero3 * numero4
 
-//console.log("resultado: ", multiplicacaoDosNumeros)*/
- 
+console.log("resultado: ", multiplicacaoDosNumeros)
