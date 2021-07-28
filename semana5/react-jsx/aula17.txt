@@ -1,0 +1,270 @@
+//DOM
+para o javaScript poder interagir com o html precisamos do DOM.
+DOM significa ****documento Onejct Model = modelo de objeto do documento****
+Após o navegador ler e renderizar o seu HTML, ele cria um conjunto de comandos 
+que podem acessar, alterar ou criar os elementos no seu site, junto com os
+seus valores.
+
+Para o javaScript conseguir interagir com o html, para o html interagir conseguir interagir
+com o firefox ou google chrome, para o CSS conseguir interagir com firefox ou google chrome
+ou qualquer outro navegador a gente vai usar o DOM.
+
+O DOM foi criado pela WCW3. E é basicamente a forma com que essas linguagens padroes e 
+universais vao se comunicar com os navegadores! A parte mais complexa do DOM fica por conta 
+dos navegadores mas a gente ainda consegue interagir com algumas coisas que o DOM da pra gente.
+
+Depois que o navegador lê e renderiza o nosso HTML ele cria um conjuto de comandos, ele cria um objetao
+com varias propriedades dentro e essas propriedades e metodos permiem que a gente acesse, altere ou crie
+elementos no nosso site junto com os valores.
+
+INFO 
+
+<windown>
+    
+    <location></location>
+    <history></history>
+
+    <document>
+        <element-html>
+
+            <element-header>
+
+                <element-title></element-title>
+
+                <element-txt>
+                    portifolio
+                <element-txt>
+
+            </element-header>
+
+            <element-body>
+                <element-h1>
+                    <text-a-heading></text-a-heading>
+                </element-h1>
+
+                <element-div>
+                    <element-p>
+                        <text-a-paragraf></text-a-paragraf>
+                    </element-p>
+
+                    <element-p>
+                        <atribute-class-hero></atribute-class-hero>
+                    </element-p>
+
+                </element-div>
+            </element-body>
+
+        </element-html>
+    </document>
+
+</windown>
+
+//EVENTOS
+De maneira geral, chamamos de evento um processo em que o status ou o valor 
+de um elemnto HTML é alterado.
+EXEMPLO DE EVENTO: Usuário clica em algum elemento, Usuárioinsere um valor 
+em uma tag input, usuarioclica na tecla "enter" do seu computador.
+
+Se mudou alguma coisa no html, se o usuario interagiu com alguma coisa no 
+html a gente tem um evento.
+
+//PEGAR O EVENTO
+Para pegar um evento de um elemento html usamos esta sintaxe:
+<elemento nome do eveneto="nomeDaFunção()"> se fosse html puro
+
+//EVENTOS MAIS COMUNS
+onchange: um elementoou seu valor foram alterados
+onclick: usuario clicou no elemento
+onmouseouver: usuario posicionou o mouse em cima de um elemento
+onmouseout: usuario tirou o mouse do elemento
+
+
+//ANTIGAMETE 
+A programação era manipulando o DOM diretamente. Problemas dessas abordagem:
+Funçoes disponiveis dificeis de manipular, Dev precisa se preocupar com 
+muitas coisas, toda vez que um dado é alterado, o DOM precisa ser atualizado: 
+é dificil manter a consistencia.
+
+É muito dificil por exemplo manter o que o facebook faz, o facebook usa 
+react, o facebook criou o react. Quando voce clica naquelas 3 bolinhas e 
+clica em "Esse conteudo nao é interesante para mim", no mesmo segundo que 
+voce clica no conteudo ele desaparece da sua tela e ele nao vai aparecer 
+mais para voce. Imagina se a gente tivesse que mexer na tela diretamente 
+para pegar a lista de post que esta sendo renderizada, fazer o filter, tira 
+aquele, mostra de novo... Isso era um caos manipulando o DOM diretame.
+
+
+//BIBBLIOTECAS
+Surgiram diversas bibliotecas para facilitar esse processo de desenvolvimento 
+web. Uma biblioteca é um conjunto de funçoes com um determinado propósito. 
+Escondem código complexo atrás de código amigável.
+
+Para resolver esse problema surgiram varias bibliotecas para facilitar o 
+processo de desenvolvimento e tornar a interaçao com o usuario mais leve 
+mais rapido mais consistente.
+
+Eles vão esconder um codigo super complexo e devolver para gente, 
+"Olha, se voce devolver isso aqui, eu vou fazer 37 outras coisas você não 
+precisa se preocupar com essas 37 outras coisas tem que fazer, me manda 
+fazer que eu faço". Essa é a função de uma biblioteca
+
+//EVOLUSÃO
+Com a evolusão dos computadores as possibilidades, as possibilidades de 
+criação de sites aumentaram. Navegadores aguentam códigos mais pesados e 
+aplicaçoes mais robustas. Bibliotexas com mais funcionalidades surgem, 
+facilitando ainda mais o desenvolvimento.
+
+Não só os computadores ficaram muitos melhores,mas, o windows explore já 
+era... Google chrome vem ai com muita força cada ano, cada 3 meses eles 
+lançam alguma coisa nova. As bibliotecas vem surgundo para deixar o 
+desenvolvimento mais interessante, mais facil para a pessoa desenvolvedora 
+e mais fluida para que  ta usando esse nosso site esse nosso codigo. 
+
+//BIBBLIOTECAS DE desenvolvimento WEB
+
+Angular
+Ember 
+View
+jQuery
+React 
+
+Aprendeu react? View, amber, jQuery mao na roda. A ideia aqui é o 
+javaScript, isso aqui não é linguagem de programação, a gente vai colocar 
+só o que a gente já sabe, nossos conceitos de html, css, javaScript, em 
+uma biblioteca ai só para facilitar nossa vida. Tem documentaçoes exelentes 
+entao entao é muito facil transitar de um frame work para outro.
+
+//REACT
+Uma dessas bibliotecas é o react. Desenvolvida pelo facebook, é uma das 
+bibliotecas ****MAIS USADAS**** para o desenvolvimento  web no mundo. 
+Esta em constante evoluçao: possi atualizaçoes e otimizaçoes frequentes.
+
+Entao o reat ele nao é só criado pelo facebook mas ele é usado pelo 
+facebook, o netflix usa react. Entao a ta aqui de graça tendo acesso a 
+uma das melhores bibliotecas do mundo, as pessoas programadoras mais 
+experientes, imagina as pessoas desenvolvedoras do facebook? o quanto 
+elas sao geniais? Elas estao codando uma parada para a gente usa. 
+Vale a pena olhar a documentaçao e artigos sobre o react!   
+
+//POR QUE USAR REACT?
+Muito utilizada por varios devs, só é preciso utilizar javaScript. 
+Criada e mantida pelo facebook, reatividade, componetizaçao.
+
+Entao você vai colocar react no stack overflow vao aparecer 77milhos de 
+respostas, pq tem 77 milhoes de pessoas usando react. A gente vai usar 
+apenas javaScript! Usamos ate um pouco de html e css só por um tempo pois 
+depois vamos aprender a estilizar o site pelo javaScript,nao vamos precisar 
+aprender nada novo !!! 
+
+//REATIVIDADE 
+Pelo nome é possivel inferir que a reatividade é um grande pilar do react. 
+Ela representa o fato de de quando os dados mudam, a interface (DOM) 
+reflete a mudanaça imediantamente e automaticamente. Faccilita muito a 
+vida da equipe de desenvolvimento e previne bugs.
+
+Entao se o usuario clicar no botao, se é para alguma coisa mudar ela vai 
+mudar, isso ta garantido, o dado mudou a interface mudou. Isso previne 
+bugs, garante que se a pessoa coloco o nome dela num campo o nome dela 
+vai aparecer em outro lugar.
+
+INFO
+
+O react nao é um framework, pois um framework nao da muita liberdade pra 
+gente, entao o frameworkvai seguir o proprio fluxo. A gente vai usra as 
+funçoes deles passando parametros certinho do jeito que ele espera. 
+Por exemplo o angular que é um framework nao vai entender se voce quiser 
+fazer um fluxo diferente, mas, no react a gente consegue definir como esse 
+fluxo funciona, entao por isso é uma biblioteca!
+
+
+
+
+//TESTE EM AULA 
+
+//app é um componente 
+function App() {
+
+  function daOi(){
+    alert ("OIEEEEEEEEEE!! ESSA É A LOVELACE")
+  }
+
+  const nomeUsuario = "Jorel"
+  return (
+    <div className="App">
+   
+    <h2>SALVE LOVE LACE, AGORA 6 VAO SABER REACT </h2>
+    <h3>UHUUUUUUUL</h3>
+
+    <h2>LabeNinjas</h2>
+    <h3> compre agora</h3>
+    <button onClick={daOi}> Quer saber quem sao essas pessoas felizes a baixo? </button>
+    <img src={printMinhaTela}></img>
+    <p>Ola, {nomeUsuario}, desejamos boas-vindas</p>
+    </div>
+  );
+}
+
+// function pegaTamanhoArray(array){
+//   return array.lenght
+// }
+
+export default App;
+
+//exercicio de aula 1 
+
+//css 
+
+.App{
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+img{
+    height: 150px;
+    width: 200px;
+    margin: 15px;
+}
+
+a{
+    margin: 15px;
+}
+
+//app.js
+
+import "./style.css";
+import logo from "./img/logo.png"
+
+
+
+function App() {
+
+  
+  return (
+    <div className="App">
+   
+      <h3>Aprenda react com a Labenu!</h3>
+      <img src = {logo} alt = "logo da labenu" />
+      <a href="www.labenu.com.br">Site da Labenu </a>
+      <button>clique aqui</button>
+    </div>
+  );
+}
+
+
+export default App;
+
+
+//DEPLOY 
+Quando fazemos um site (ou quakquer outro programa), queremos que o mundo 
+possa acessá-lo pela internet. Subir um programa para a internet é o que 
+chamamos de deploy. Voces ja conhecem uma ferramenta que faz isso, o surge.
+
+
+//Build
+Para fazer o deploy de um site é preciso gerar o build antes. Um build é 
+uma versao estatica da aplicaçao, que nao precisa do comando npm run start 
+para rodar. O codigo gerado é ilegivel, e serve apenas pro deploy, 
+para gerar o build, usamos: npm run build.
