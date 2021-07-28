@@ -103,4 +103,12 @@ build/
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
+<<<<<<< HEAD
+semana3/lista-exercicios-revisao-js/exercicios.js
+=======
+.DS_Store
+>>>>>>> 50a5e330642fe26193091e6e553f106243b7f1b8
+=======
 semana0/sobre-mim/minha-bio.txt
+>>>>>>> origin/master
