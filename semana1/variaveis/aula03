@@ -1,0 +1,161 @@
+INFO
+---
+Uma linguagem de programação nada mais é do que um conjunto de normas (sintaxe) 
+que permite criar comandos para o computador, o computador não entende literalmente 
+a linguagem de programaçã, a lingaguem é um meio termo. O que o computador entende 
+são impulsos eletricos, traduzinddos para 0 ou 1.
+
+Exemplo oi = 01001111 01101001
+
+0 = false
+1= true
+
+0 = off
+1 = on
+
+algumas linguagens se aproximam mais da linguagem do computador, o que seriam as 
+linguagens de (baixo nível) a algumas se aproximam mais da linguagem natural (alto nível).
+
+baixo nível = mais proximo da linguagem da maquina
+alto nível = mais proximo da linguagem humana
+
+Alto = Java, Python, JavaScript
+intermediario = C, C++
+Baixo = Assembly, Binário
+
+JavaScript é uma das linguagens mais utilizadas de programação mais utilizadas 
+atualmenre no meio WEB. É uma linguagem moderna e aceita por todos os navegadores 
+mais usados hoje em dia.
+
+Podemos fazer o front, o back é uma lingaguem muito amigavel.
+
+como fazer um comentario: para comentar uma linha use apenas //, se quiser comentar 
+mais de uma linha coloque o txt/codigo entre esses sinais /* aqui*/
+
+atalho = comand + /
+
+declarar uma variavel = criar uma variavel 
+atribuir = o simbolo de = significa atribuir no js nao de compararaçao
+valor = tudo o que colocamos depois do sinal de igual é o valor!
+
+const        novaDaVariavel           =                     100
+  |                 |                 |                      |
+declaração   nome da variavel    simbolo de atribuirção     valor
+
+const = igual constante, quando se declara uma variavel com const, o valor 
+atribuido nao pode ser mudado posteriormente.
+
+let = quando declaramos uma variavel com o let podemos alterar o valor dessa variavel 
+futuramente!!
+
+
+Uncaught SyntaxError: Identifier 'nome' has already been declared = isso significa 
+que já existe uma variavel com esse nome. Variaveis de um mesmo codigo nao podem 
+ter nomes repetidos.
+
+BOAS PRATICAS 
+
+- os nomes das variaveis devem ter significado
+- os nome de variaveis nao podem começar com numeros ou caracteres especiais 
+- Utilizar camelCase: primeira letra minúscula, primeira letra da segunda 
+  palavra/entre uma palavra e outro caso tenha mais de duas palavras, a primeira 
+  letra deve ser maiuscula.
+
+  Exemplo: nomeCompleto, nomeDoEd, nomeDoJorel.
+
+  TIPOS DE VARIAVEIS
+
+  - Number
+  - Strings
+  - Boolean
+
+ NUMBER = representa os numeros e podemos coloar qualquer tipo de numero 23, 1.79, 
+  -20. Numero sem aspas sao numeros
+
+STRING = representa os textos, utilizamos '' ou "" duplas para criar uma string. 
+  Se um numero estiver dentro dessas apsas ele considerado um texto, logo, uma 
+  string.
+
+    algebra bolleana = isto é uma algebra que leva em consideração o que os valores assumidos são somente:
+        - true ou 1
+        - false ou 0
+        os booleanos tem seus proprios operadores!!
+BOLLEAN = sao variaveis que só assumem o valor de true ou false 
+
+para descobrir o tipo de variavel utilize o typeof
+
+Exemplo console.log('tipo de variavel:', typeof primeiroNome) - string
+Exemplo console.log('tipo de variavel:', typeof idade) - number
+Exemplo console.log('tipo de variavel:', typeof estudante) - bollean
+
+UNDEFINED = é um tipo que representa a falta de valor atribuido á variavel. undefined = indefinido = 
+não foi definido = nao possui atribuição
+
+exemplo const umaVariavel = 
+        console.log(typeof umaVariavel) undefined 
+
+Nao se pode declarar uma variavel sem colocar o sinal de atribuiição.
+
+NULL = tambem representa a falta de valor atribuido, porem a difrenaça dele para undefined, é que ele 
+precisa ser atribuido diretamente a uma variavel. Ele só tera o valor null se o programador declarar 
+que ela é null
+
+exemplo const umaVariavel = 
+        console.log(umaVariavel) undefined 
+
+        const umaVariavel = nuul;
+        console.log(umaVariavel) null
+
+
+
+
+EXERCICIOS EXEMPLOS FEITOS EM AULA 
+
+console.log('hello, world!')
+
+console.log('ola turma lovelace! prontos para o js')
+
+// const nome = prompt ('qual é o seu nome?')
+// console.log(nome)
+// const nome = 'amanda'
+
+let nomeSobrenome = 'martha cristiny'
+console.log('original:', nomeSobrenome)
+
+nomeSobrenome = 'Ed dos prazeres'
+console.log('modificado:', nomeSobrenome)
+
+
+const nomeDaTurma = 'love lace'
+const numeroDaTurma = 14
+const impar = false
+
+console.log ('A nova turma da Labenu se chama', nomeDaTurma, 
+'e o número dessa turma é', numeroDaTurma , '.essa turma é um numero impar?', impar)
+
+const primeiroNome= 'Martha'
+const sobrenome= 'avelar'
+const idade = 22
+const estudante = true
+
+console.log('Meu nome é', primeiroNome , 'e o meu sobrenome é', sobrenome , 
+'e eu tenho' , idade , 'anos de idade' , '.  Eu ainda sou estudante?', estudante)
+
+console.log('Nome e sobrenome:', primeiroNome, sobrenome)
+console.log('sua idade:', idade)
+console.log('Você é estudante ainda?', estudante)
+
+// const nomeUsuario = prompt('qual é o seu nome?')
+// const idadeUsuario = Number (prompt ('qual é a sua idade?'))
+
+// const nomeUsuario2 = prompt('qual é o seu nome?')
+// const idadeUsuario2 = Number (prompt ('qual é a sua idade?'))
+
+// const somaDasIdades = idadeUsuario + idadeUsuario2
+
+const number = 22
+const conversaoNumber = number.toString()
+
+// console.log('tipo do valor armazenado na variavel nome e idade:', typeof nomeUsuario, typeof idadeUsuario)
+// console.log('quanto o valor da sua idade com a idade do seu namorado?', somaDasIdades)
+console.log('convertendo um numero em uma string:', typeof number, typeof conversaoNumber)
