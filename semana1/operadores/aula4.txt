@@ -1,0 +1,310 @@
+//EXEMPLOS -------------------------------------------------------------
+//Operadores Aritimédicos ----------------------------------------------
+console.log("Olá loveLace!!")
+
+const primeiroNumero = 10
+const segundoNumero = 20
+const terceiroNumero = 15
+
+//soma
+const soma = primeiroNumero + segundoNumero + 30
+console.log(soma) //Resposta: 60
+
+//Subtração
+const subtracao = segundoNumero - primeiroNumero - 2
+console.log(subtracao) //Resposta: 8
+
+const subtracao2 = primeiroNumero - segundoNumero - 2
+console.log(subtracao2) //Resposta: -12
+
+//Multplicação
+const multplicao  = primeiroNumero * segundoNumero 
+console.log(multplicao) //Resposta: 200
+
+//Divisão
+const divisao  = segundoNumero / primeiroNumero
+console.log(divisao) //Resposta: 2
+
+const divisao1  = primeiroNumero / segundoNumero 
+console.log(divisao1) //Resposta: 0.5
+
+/*INFO: 
+QUANDO UM NUMERO PAR o numero é divisivel por 2 = significa que quando a gente divide um numero 
+par por 2 o resto é 0. 
+
+QUANDO UM NUMERO IMPAR o numero não é divisivel por 2 = significa que quando a gente divide um 
+numero impar por 2 o resto é diferente de 0 ou 1.
+
+QUANDO UM NUMERO É MULTIPLO DE 5  = quando o resto da divisao por 5 for 0.
+
+-------> O RESTO DE UMA DIVISAO SEMPRE SERA INDICADO COM UM %
+
+PODEMOS CHAMAR ESSE SÍMBOLO ASSIM --> % = MOD
+*/
+
+//Resto da divisao
+const restoDaDivisao = terceiroNumero % primeiroNumero
+console.log(restoDaDivisao) //Resposta: 5 
+
+const a = 1
+const b = 2
+const c = 7
+const d = 18
+
+const restoDaDivisao2 = a % b
+console.log(restoDaDivisao2) // //Resposta: 1
+
+//Verificando multiplo de 2
+const multiplo = c % 2 
+console.log(multiplo) //Resposta: 1
+
+const multiplo2 = d % 2 
+console.log(multiplo2) //Resposta: 0
+
+/*
+INFO: A DIVISAO SEMPRE VAI DEVOLVER UM NUMERO PRA GENTE MESMO QUE ESSE NUMERO SEJA QUEBRADO.
+RECOMENDAÇÃO: SEMPRE FAZER A DIVISAO EM PARES. COM 3 VARIAVEIS AUMENTA A COMPLEXIDADE DO CODIGO! 
+*/
+
+//Acrescentar 1 número
+let minhaIdade = 21
+minhaIdade = minhaIdade + 1
+console.log(minhaIdade)
+
+//Modo simplificado
+let minhaIdade2 = 21
+minhaIdade2 += 1
+console.log(minhaIdade2)
+
+//Comparadores ----------------------------------------------
+/*
+INFO:
+COMPARADOR IGUAL: == (VALOR)
+COMPARADOR IGUAL: === (VALOR E TIPO)
+COMPARADOR DIFERENTE: != (VALOR)
+COMPARADOR DIFERENTE: !== (VALOR E TIPO)
+COMPARADOR MAIOR: >
+COMPARADOR MENOR: <
+COMPARADOR MAIOR OU IGUAL: >=
+COMPARADOR MENOR OU IGUAL: <=
+
+O RESULTADO DE UMA COMPARAÇÃO SEMPRE SERÁ UM BOOLEANO (TRUE OR FALSE = VERDADEIRO OU FALSO)
+QUANDO USAMOS 3 SINAIS DE = ESTAMOS COMPARANDO VALOR E TIPO. QUANDO USAMOS 2 SINAIS DE = ESTAMOS COMPARANDO APENAS VALOR.
+*/
+
+//Igualdade 
+
+const primeiroTexto = "Abobrinha"
+const sengundoTexto = "Maracuja"
+
+const primeiroNumero2 = 19
+const segundoNumero2 = 19
+
+const Igualdade = primeiroNumero2 === primeiroTexto
+const igualdade2 = primeiroNumero2 === segundoNumero2
+
+console.log(Igualdade)
+console.log(igualdade2)
+
+//Diferença
+const diferenca = primeiroNumero2 !== segundoNumero2
+const diferenca2 = primeiroNumero2 !== primeiroTexto
+
+console.log(diferenca)
+console.log(diferenca2)
+
+//Maior e Maior igual - Menor e Menor igual
+console.log(3 >= 4)
+console.log (1 > 2)
+console.log(3 <= 4)
+console.log(1 < 2)
+
+console.log(4 >= 4)
+console.log(4 > 4)
+
+//Operadores lógico ----------------------------------------------
+
+/*
+INFO:
+OPERADOR E: && 
+OPERADOR OU: ||
+OPERADOR NÃO/NEGAÇÃO: !
+
+OPERADORES ESPECIAIS - USADA ENTRE BOOLEANOS
+OPERADORES ESPECIAIS - RETORNA UM BOOLEANO
+OPERADORES ESPECIAIS: && - SOMENTE RETORNA TRUE SE TODOS OS COMPARADORES(BOOLEANOS) 
+    ENVOLVIDOS FOREM TRUE (SE A COMPARAÇÃO DER TRUE)
+
+OPERADORES ESPECIAIS: || - SOMENTE RETORNA FALSE SE TODOS OS COMPARADORES(BOOLEANOS) 
+    ENVOLVIDOS FOREM FALSE (SE A COMPARAÇÃO DER FALSE)
+
+OPERADORES ESPECIAIS: ! - SEMPRE RETORNA O BOOLEANO(COMPARADOR) OPOSTO
+*/
+
+// E
+console.log(true && true)   //true
+console.log(true && false)  //false
+console.log(false && true)  //false
+console.log(false && false) //false 
+
+// OU
+console.log(true && true)   //true
+console.log(true && false)  //true
+console.log(false && true)  //true
+console.log(false && false) //false
+
+//NÃO-NEGAÇÃO
+console.log(!true)   //false
+console.log(!false)  //true
+
+const abobrinha = false
+console.log(!abobrinha)
+
+
+//EXERCICIO 1 -----------------------------------------------------------
+const valor1 = 3
+const valor2 = 4
+const valor3 = 5
+
+
+const soma2 = valor1 + valor2
+console.log(soma2) 
+
+const multi = valor1 * valor3 
+const resultado= multi / 2
+console.log(resultado)
+
+const sub = valor3 - valor2
+const resultado2 = sub * -1
+console.log(resultado2)
+
+const resto = 234 % 5
+console.log(resto)
+
+//Segunda forma
+
+//Item1
+const soma3 = 3 + 4
+console.log(soma3)
+
+//Item2
+const multiplicacaoEDivisao = (3 * 5) / 2
+console.log(multiplicacaoEDivisao)
+
+//Item3
+const subtraiMultiplca = (5 - 4) * (-1)
+console.log(subtraiMultiplca)
+
+//Item4
+const resto2 = 234 % 5 // === 0 (Colando essa comparação ao final eu teria como retorno um booleano)
+console.log(resto2)
+
+
+//EXERCICIO 2 -----------------------------------------------------------
+const num1 = 4
+const num2 = 8
+
+console.log(num1 === num2)  //false
+console.log(num1 !== num2)  //true
+console.log(num1 > num2)    //false
+console.log(num1 < num2)    //true
+
+console.log("O primeiro número é igual ao segundo?", num1 === num2 )        //false
+console.log("O primeiro número é diferente do segundo?", num1 !== num2 )    //true
+console.log("O primeiro número é maior que o segundo?", num1 > num2 )       //false
+console.log("O primeiro número é menor que o segundo?", num1 < num2 )       //true
+
+const igualdade3 = num1 === num2
+console.log("O primeiro número é igual ao segundo?", igualdade3  )          //false
+
+const diferenca3 = num1 !== num2
+console.log("O primeiro número é diferente do segundo?", diferenca3 )       //true
+
+const maior = num1 > num2
+console.log("O primeiro número é maior que o segundo?", maior )              //false
+
+const menor = num1 < num2
+console.log("O primeiro número é menor que o segundo?", menor )              //true
+
+
+//EXERCICIO 3 -----------------------------------------------------------
+const a2 = true
+const b2 = false
+const c2 = true
+
+console.log(a2 && b2)          //false
+console.log(b2 && c2)          //false
+console.log(a2 && c2)          //true
+console.log(a2 && b && c2)     //false
+
+console.log("a tem o valor igual de b?", a2 && b2 )                  //false
+console.log("b tem o valor igual de c?", b2 && c2 )                  //false
+console.log("a tem o valor igual de c?", a2 && c2 )                  //true
+console.log("a tem o valor igual de b e c?", a2 && b2 && c2 )        //false
+
+const igual4 = a2 && b2
+console.log("a tem o valor igual de b?", igual4)              //false
+
+const igual5 = b2 && c2
+console.log("b tem o valor igual de c?", igual5)              //false
+
+const igual6 = a2 && c2
+console.log("a tem o valor igual de c?", igual6)              //true
+
+const igual7 = a2 && b2 && c2
+console.log("a tem o valor igual de b e c?", igual7)          //false
+
+
+
+//EXERCICIO 4 -----------------------------------------------------------
+const a3 = true
+const b3 = false
+const c3 = true
+
+console.log(a3 || b3)          //true
+console.log(b3 || c3)          //true
+console.log(a3 || c3)          //true
+console.log(a3 || b && c3)     //true
+
+console.log("a tem o valor igual de b?", a3 || b3 )                  //false
+console.log("b tem o valor igual de c?", b3 || c3 )                  //false
+console.log("a tem o valor igual de c?", a3 || c3 )                  //true
+console.log("a tem o valor igual de b e c?", a3 || b3 || c3 )        //false
+
+const igual8 = a3 || b3
+console.log("a tem o valor igual de b?", igual8)              //true
+
+const igual9 = b3 || c3
+console.log("b tem o valor igual de c?", igual9)              //true
+
+const igual10 = a3 || c3
+console.log("a tem o valor igual de c?", igual10)              //true
+
+const igual11 = a3 || b3 || c3
+console.log("a tem o valor igual de b e c?", igual11)          //true
+
+//EXERCICIO 5 -----------------------------------------------------------
+const nome = "Martha"
+const anoDeNascimento = 1999
+const anoAtual = 2021
+
+console.log("Olá", nome)
+
+const resposta = anoAtual - anoDeNascimento
+console.log(resposta)
+
+const resposta2 = resposta > 18
+console.log(resposta2)
+
+const resposta3 = 2050 - anoDeNascimento
+console.log(resposta3)
+
+const nome2 = prompt("Qual é o seu nome?")
+const anoDeNascimento2 = prompt("Em que ano você nasceu?")
+const anoAtual2 = prompt("Em que ano estamos?")
+
+console.log("Olá!", nome2)
+console.log("Você tem", anoAtual2 - anoDeNascimento2, "anos!")
+console.log("Você é maior de idade?", resposta >= 18 )
+console.log("Em 2050 você terá", 2050 - anoDeNascimento2, "anos!")
+

@@ -1,0 +1,160 @@
+Como vimos anteriormente podemos escrever strings de duas maneiras diferentes com duas aspas 
+".." ou aspas simples '..', porem existe mais uma maneira de escrever as strings, que é usando 
+a crase `..`. Podemos chamar esse metodo de templete string ou template Literals.
+
+exemplo `Hello world`
+
+
+CONCATENAÇÃO DE STRINGS
+    Podemos juntar varias strings para formar uma nova e isso se chama concatenação de strings, 
+    utilizamos o sinal de + para fazê-lo.
+
+TEMPLATE STRINGS
+    O unico diferente é o template string, pois ela nos permite colocra variaveis javaScript 
+    no meio da string. 
+
+
+PROTOTIPO DE STRINGS 
+    O javascript nos fornece algumas informações (propriedades) e ações (métodos) que podemos 
+    realizar sobre uma string.
+
+    mais exemplos - https://www.w3schools.com/Jsref/jsref_obj_string.asp
+
+
+Propriedade length
+    A propriedade length nos diz qual é o tamanho de uma string, incluindo espaços.
+
+Método toLowerCase()
+    o método toLowerCase() transforma todas as letras da sua string em minúsculas
+
+Método toUpperCase()
+    o método toUpperCase() transforma todas as letras da sua string em maiúsculas
+
+Método trim()
+    O método trim retira os espaços que existem antes e depois da sua string
+
+Método includes(caracteres)
+    O método includes(caracteres) determina se um conjunto de caracteres pode ser encontrado 
+    dentro de outra string, retornando true ou false
+
+Método replaceAll(chars1, chars2)
+    O método replaceAll(chars1, chars2) troca todas as ocorrências de um conjunto de 
+    caracteres (chars1)por alguma outra coisa (chars2)
+
+ARRAYS
+    Arrays nada mais são do que listas de elementos. No javascript, usamos colchetes para 
+    agrupar os itens de uma lista. Podemos colocar elementos de qualquer tipo que vimos até 
+    agora dentro de um array! Em um array, acessamos os elementos através da posição deles 
+    na lista! Mas no caso dos arrays, a numeração não começa no 1, mas sim no 0!
+
+PROTOTIPO DE ARRAYS
+    O javascript nos fornece algumas informações (propriedades) e ações (métodos) que podemos 
+    realizar sobre uma lista (array)
+
+        mais exemplos - https://www.w3schools.com/Jsref/jsref_obj_array.asp
+
+Propriedade length
+    A propriedade length nos diz qual é a quantidade de itens de um array.
+
+Método push(elemento)
+    O método push(elemento) adiciona um ou mais elementos ao final de um array.
+
+Método pop()
+    O método pop() remove o último elemento de um array.
+
+Método includes(elemento)
+    O método includes(elemento) determina se um array contém um determinado elemento, retornando 
+    true ou false.
+
+Método splice(i, n)
+    O método splice(i, n) remove n elementos à partir da posição i do array.
+
+
+    EXERCICIOS FEITOS EM AULA 
+
+    const aspasSimples = 'aspas simples,'
+const aspasDuplas = "aspas duplas,"
+const templateString = `template string, vulgo, crase`
+const textoComAspas = 'Nossa, isso é muito "legal" '
+
+console.log(aspasSimples, aspasDuplas, templateString)
+console.log(textoComAspas)
+
+const nome = 'chijo'
+const idade = 27
+const frase = "Meu nome é" + nome + 'e eu tenho' + idade + 'anos'
+const frase2 = "Meu nome é " + nome + ' e eu tenho ' + idade + ' anos'
+const frase3 = `Meu nome é ${nome} e eu tenho ${idade} anos`
+
+console.log(frase)
+console.log(frase2)
+console.log(frase3)
+console.log(`Meu nome é ${nome} e eu tenho ${idade} anos`)
+
+const nomeUsuario = prompt('Qual é o seu nome?')
+const corFavoritaUsuario = prompt('Qual é a sua cor favorita?')
+const respostaUsuario = `A cor favorita de ${nomeUsuario} é ${corFavoritaUsuario}`
+const respostaUsuario2 = "A cor favorita de " + nomeUsuario + " é " + corFavoritaUsuario
+
+console.log(respostaUsuario)
+console.log(respostaUsuario2)
+console.log(`A cor favorita de ${nomeUsuario} é ${corFavoritaUsuario}`)
+
+const nomeDev = prompt ('Qual é o seu nome?')
+console.log(`O nome do desenvolvedor tem ${nomeDev.length} caracteres`)
+
+const nomeCaixaBaixa = prompt ('Qual é o seu nome?')
+const nomeCaixaAlta = prompt ('Qual é o seu nome?')
+const emailComEspaco = prompt ('Qual é o seu email')
+const procurandoCaracteres = 'estou comendo batata chips agora'
+const trocaTroca = 'estou comendo batata chips agora'
+
+console.log(`nome recebeido ${nomeCaixaBaixa}, nome transformado ${nomeCaixaBaixa.toLowerCase()}`)
+console.log(`nome recebeido ${nomeCaixaAlta}, nome transformado ${nomeCaixaBaixa.toUpperCase()}`)
+console.log(`nome recebeido ${emailComEspaco}, nome transformado ${emailComEspaco.trim()}`)
+console.log(`nome recebeido ${procurandoCaracteres}, nome transformado ${procurandoCaracteres.includes('batata')}`)
+console.log(`nome recebeido ${trocaTroca}, nome transformado ${trocaTroca.replaceAll('batata', 'coca-cola'  )}`)
+
+
+const linguaDoI = prompt ('digite uma frase')
+const a = linguaDoI.replaceAll('a', 'i')
+const e = a.replaceAll('e','i')
+const o = e.replaceAll('o','i')
+const u = o.replaceAll('u','i')
+
+
+console.log(`frase normal: ${linguaDoI}, frase na lingua maiscula: ${linguaDoI.toUpperCase()}`)
+console.log(`frase normal: ${linguaDoI}, frase na lingua do i: ${u}`)
+console.log(`frase normal: ${linguaDoI}, tamanho da frase ${linguaDoI.legth}`)
+
+const arrayDeDoguinho = ['poodle','caramelo','paulistinha','rottweiler','pitbull']
+
+const usurarioEscolheNumber = Number(prompt('escolha um numero de 1 a 5'))
+const resultado = arrayDeDoguinho[usurarioEscolheNumber -1] 
+console.log(`O usuario escolheu o a raça ${resultado} da lista de doguinho `)
+
+const arrayNumeros = [1,2,3,4,5,6]
+console.log(arrayNumeros.length)
+
+
+arrayNumeros.push(7)
+console.log(arrayNumeros)
+
+arrayNumeros.splice(3,2)
+console.log(arrayNumeros)
+
+
+
+
+TENTATIVAS ERRADAS PARA NAO REPETIR NOVAMENTE
+
+const usuarioComidinha =  prompt('Qual é a sua comida favorita?')
+const conversao = usuarioComidinha.toString()
+const conversao2 = arrayDeComidinhas.replaceAll(arrayDeComidinhas[1], arrayDeComidinhas[usuarioComidinha])
+
+console.log(`inserindo a comida do usuario ${arrayDeComidinhas.replaceAll('strogonoff de frango', usuarioComidinha)}`)
+console.log(`inserindo a comida do usuario ${arrayDeComidinhas.replaceAll('strogonoff de frango', conversao)}`)
+console.log(`inserindo a comida do usuario ${arrayDeComidinhas.replaceAll('strogonoff de frango', conversao2)}`)
+
+******* index.js: Uncaught TypeError: arrayDeComidinhas.replaceAll is not a function
+
