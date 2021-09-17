@@ -1,59 +1,41 @@
 import React from 'react';
-import styled from 'styled-components';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
+import CardPequeno from './components/CardPequeno/CardPequeno';
 import ImagemButton from './components/ImagemButton/ImagemButton';
-import CardEmail from './components/CardEmail/CardEmail';
-import CardEndereco from './components/CardEndereco/CardEndereco';
-
-
-const BigCardContainer = styled.BigcardContainer.CardGrande`
-          display: flex;
-          align-items: center;
-          border: 1px solid black;
-          padding: 20px 10px;
-          margin-bottom: 10px;
-          height: 200px;
-`
-styled.BigcardContainer.img`
-          width: 70px;
-          margin-right: 10px;
-          border-radius: 50%;
-`
-
-styled.BigcardContainer.div`
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-`
-
-styled.BigcardContainer.h4`
-      margin-bottom: 15px;
-`
-
-
 
 function App() {
   return (
     <div className="App">
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
-
-        <BigCardContainer>
-          <CardGrande 
-            imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
-            nome="Astrodev" 
-            descricao="Oi, eu sou o Astrodev. Sou o chefe dos alunos da Labenu. Adoro pedir e-mails na sexta-feira e esperar os alunos responderem só para responder com uma bronca e dar mais trabalho para eles."
-
-          />
-        </BigCardContainer>
-          
-       
+        <CardGrande 
+          imagem="https://media-exp1.licdn.com/dms/image/C4D03AQFmC6grH7f4LQ/profile-displayphoto-shrink_800_800/0/1625422834790?e=1636588800&v=beta&t=8B3DSGR3vgCXd1nE0yfViMo95kNt0vxsiCNXPpVjEmw" 
+          nome="Martha Cristiny" 
+          descricao="Oi, eu sou a Martha Cristiny. Sou estudante, aluna da Labenu. Estou aqui em busca do conhecimento das tecnologias utilizadas na programação. Tenho pouca experiencia, mas o meu objetivo é me tornar otima nisso!"
+        />
         
         <ImagemButton 
           imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
           texto="Ver mais"
         />
+      </div>
+
+      <div className='page-section-container'>
+          <CardPequeno
+              imagem= 'https://img-premium.flaticon.com/png/512/69/premium/69957.png?token=exp=1631054542~hmac=c395cf9d703f57fab6638387945adf02'
+              email='Email:'
+              texto= 'marthacristinyavelar@gmail.com'
+          />
+      </div>
+
+
+      <div className='page-section-container'>
+          <CardPequeno
+              imagem= 'https://cdn-icons-png.flaticon.com/512/15/15766.png'
+              endereco='Endereço: '
+              texto= 'Rua xingu, 161, bloco1, apartamento 1202'
+          />
       </div>
 
       <div className="page-section-container">
@@ -82,24 +64,6 @@ function App() {
           imagem="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png" 
           texto="Twitter" 
         />        
-      </div>
-
-
-      <div className="page-section-container">
-        <h2>Meu Contato</h2>
-        <CardEmail
-              imagem = './img/gmail-logo.png'
-              email = 'martha@gmail.com'
-        />
-             
-      </div>
-      <div className="page-section-container">
-        <h2>Meu Endereço</h2>
-        <CardEndereco
-              imagem = './img/desenho-localizacao.png'
-              endereco = 'Rio de janeiro, Rua desenvolvedor FullStack, número 666. Edificio Lasco - CEP 01101111 01101001  '
-        />
-             
       </div>
     </div>
   );

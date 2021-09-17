@@ -1,0 +1,23 @@
+EXEMPLO ARRAY DE OBJETOS
+
+arrayObj = [
+    {
+        nomeUsuario:'Martinha',
+        fotoUsuario:'',
+        fotoPost:''
+    },
+    {
+       nomeUsuario:'Martinha',
+        fotoUsuario:'',
+        fotoPost:'' 
+    },
+    {
+        nomeUsuario:'Martinha',
+        fotoUsuario:'',
+        fotoPost:''
+    },
+    
+]
+
+
+EXEMPLO 
