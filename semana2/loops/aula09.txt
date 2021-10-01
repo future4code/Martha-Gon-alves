@@ -1,0 +1,52 @@
+O que são Loops
+
+Laços no Javascript
+○ while
+○ for
+○ for… of
+
+
+● Elementos de um loops
+○ Deve ter um começo
+○ Uma condição de continuação
+○ Um conjunto de ações para ser repetido
+○ Um incremento
+
+
+
+
+                ● Elementos de um loop
+                    
+                                ------------------------------------------------
+                                |                                             |
+                começo -------> checando condição ----> condição true ------> açoes repetidas 
+                                    |
+                            condição false
+
+
+while ("enquanto") é a estrutura mais básica de criação de loops
+
+        while (Condiçao){
+            Enquanto a condição fro verdadeira as linhas de código deste bloco, serão executadas.
+
+            assim que a condição ficar falsa o Loop/Laço vai parar
+        }
+
+Exemplo 1 - Imprimindo alguns números
+
+    Let i = 0; -----------------------> começo
+    while (i < 10){ -----------------> condição de continuação 
+        console.log(i) --------------> ação de repetida
+
+        i++ -------------------------> Incremento 
+    }
+
+Exemplo 2 - "Vou comer até 100 coxinhas"
+
+Let estomago = 0;
+    while (estomago < 100){ 
+        console.log("quero comer mais coxinha";
+        estomago = estomago + 10;
+    }
+
+podemos usar o i++, i =i+2, i +=2

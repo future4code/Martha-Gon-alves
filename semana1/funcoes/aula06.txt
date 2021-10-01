@@ -1,0 +1,264 @@
+O que é uma função?
+        Uma função é um bloco de código que pode ser chamado (ou invocado) a
+        partir de um nome
+
+        function calculaArea (altura, largura) |
+        const area = altura * largura          |   ----> bloco de código 
+        console.log(area)                      |
+
+        calculaArea(2, 3)                      |   -----> chamada (invocação)
+
+
+
+
+
+DECLARANDO UMA FUNÇÃO
+        O primeiro passo para criar uma função é declará-la a declaração atribui um 
+        bloco de código à um identificador (ou um nome)
+
+
+
+            identificador/nome da função           Parênteses 
+                                      |             |
+                                      |             |
+palavra especial que  <---- function calculaArea (altura, largura) |
+que idica a declaração      const area = altura * largura          |   ----> corpo da função
+da função                   console.log(area)                      |
+
+
+
+CHAMANDO UMA FUNÇÃO 
+        Podemos chamar/invocar/executar uma função usando o identificador dela quando 
+        fazemos isso, o bloco de código definido na declaração é executado
+
+
+                    identificador/nome da função        
+                        |             
+                        |
+                    calculaArea(2, 3)
+                                |
+                                |
+                            Parênteses
+
+DECLARAÇÃO VERSOS EXECUÇÃO 
+        Declarar a função não executa o código você pode chamar a função quantas 
+        vezes quiser cada chamada resulta em uma nova execução do código em 
+        Javascript, é possível executar uma função antesda sua declaração. Mas 
+        evite fazer isso, deixa o código confuso.
+
+
+
+
+Parâmetros e Argumentos
+        Funções podem receber entradas, que podem ser usadas no meio do código
+
+
+
+PARÂMETROS E ARGUMENTOS 
+        Parâmetros são como se fossem variáveis criadas na declaração da função 
+        argumentos são os valores passados na chamada da função cada parâmetro 
+        recebe seu valor dos argumentos, seguindo a mesma ordem.
+
+
+
+Escopo
+        O escopo determina quais variáveis serão acessíveis ao rodarmos o código
+
+
+const a = 1     -------> declaração da variável a
+
+function imprimeVariavel () {
+const b = 2                     --------> declaração da variável b
+console.log('Variável a', a)    --------> Acessando a variável a 
+console.log('Variável b', b)    --------> Acessando a variável b
+}
+
+
+imprimeVariavel()
+
+
+console.log('Variável a', a)      -------> Só é possível acessar a variável a
+console.log('Variável b', b)      -------> Não é possível acessar a variável b
+
+
+ESCOPO {}
+    No Javascript temos dois tipos de escopo: Escopo Global: variáveis no escopo 
+    global podem ser acessadas de qualquer lugar do código. Escopo Local: variáveis 
+    no escopo local somente podem ser acessadas dentro do escopo em que foram 
+    declaradas. As variáveis definidas dentro de uma função possuem escopo local
+
+
+// escopo global 
+function funcao1()
+{
+// escopo local #1
+
+ function funcao2()
+{
+ // escopo local #2
+
+}
+}
+// escopo global
+
+
+
+            Escopo global - pai de todos os escopos (compartilha suas variáveis 
+            com todos)
+            Escopo local #1 - pai do escopo local #2 (compartilha suas variáveis
+            com o filho, escopo local #2)
+
+OBS: NENHUM ****ESCOPO FILHO**** COMPARTILHA SUAS INFOS COM OS ESCOPOS PAI. MAS TODO 
+ESCOPO PAI COMPARTILHA SUAS INFOS COM OS ESCOPOS FILHO. 
+
+
+            Como acessar o valor de uma variável declarada dentro da função sem usar o 
+            console.log()?
+
+Retorno
+        Funções podem gerar saídas, que podem ser acessadas após a execução
+
+
+EXEMPLO 1
+        function calculaArea(altura, largura){
+                const area = altura * largura
+                return area 
+            }
+
+        const areaCalculada = calculaArea (2, 3)
+        console.log(areaCalculada)
+
+
+EXEMPLO 2
+        function calculaArea(altura, largura){
+                const area = altura * largura
+                return area 
+            }
+
+        const areaCalculada = calculaArea (2, 3)
+        console.log(calculaArea (2, 3))
+
+
+EXEMPLO 3
+        function calculaArea(altura, largura){
+                const area = altura * largura
+                return area 
+            }
+
+        calculaArea (2, 3)
+        console.log(calculaArea (2, 3))
+
+RETORNO 
+        O retorno acontece sempre usando a palavra chave return, seguida pelo valor 
+        a ser retornado uma função só pode retornar um valor, de qualquer tipo 
+        quando a função retorna, sua execução é interrompida
+
+
+
+FUNÇŌES - MODELO MENTAL 
+        Funciona como uma caixa preta que pode receber valores de entrada 
+        (input/parâmetros/argumentos) e pode devolver valores de saída 
+        (output/resultado)
+
+        Altura e                          Área do
+        largur    ------>  Função ----->  retângulo
+
+       INPUT                               OUTPUT
+
+
+
+EXPRESSŌES DE FUNÇŌES 
+        Expressões de funções são somente uma forma diferente (mas bem parecida) de 
+        se declarar funções Deve ser atribuída a uma variável e é invocada da mesma 
+        forma que a declaração, mas usando o nome da variável atribuída
+
+
+                    const calculaArea = function (altura, largura){
+                                const area = altura * largura
+                                return area 
+                            }
+
+                        const areaCalculada = calculaArea (2, 3)
+                        console.log(areaCalculada)
+
+ARROW FUNCTION 
+        Tipo de expressão de função com sintaxe simplificada Por ser uma expressão, 
+        deve ser atribuída a um variável para ser invocada Invocação continua a mesma 
+
+
+                    const calculaArea = (altura, largura) => {
+                                    const area = altura * largura
+                                    return area 
+                                }
+
+                            const areaCalculada = calculaArea (2, 3)
+                            console.log(areaCalculada)
+
+
+
+TODOS OS EXERCICIOS FEITOS EM AULA 
+
+function olaMundo(){
+    console.log('HELLO WORLD')
+}
+
+olaMundo()
+
+function chamandoNomes(nome){
+    console.log(nome)
+}
+
+chamandoNomes('Martha')
+chamandoNomes('Jorel')
+chamandoNomes('Paulinho')
+
+
+
+function calculaArea(altura, largura){
+    const area = altura * largura
+    return area 
+}
+
+calculaArea (2, 3)
+console.log(calculaArea (2, 3))
+
+
+function soma(num1, num2){
+    const soma = num1 + num2
+    return soma 
+}
+
+const somaResultado = soma (2, 3)
+console.log(soma (2, 3))
+
+
+function arrayDeNumeros (array){
+    const divisãoArray = array[7] / array[0]
+    return divisãoArray
+}
+
+const  arrayDeNumerosArgumento = arrayDeNumeros([2,3,4,5,6,7,8,9])
+console.log(arrayDeNumerosArgumento)
+
+
+
+
+
+
+
+const chamandoNomes2 = function (nome){
+    console.log(nome)
+}
+
+chamandoNomes2('Martha')
+chamandoNomes2('Jorel')
+chamandoNomes2('Paulinho')
+
+
+const arrayDeNumeros2 = (array) => {
+    const divisãoArray = array[7] / array[0]
+    return divisãoArray
+}
+
+const  arrayDeNumerosArgumento2 = arrayDeNumeros2([2,3,4,5,6,7,8,9])
+console.log(arrayDeNumerosArgumento2)

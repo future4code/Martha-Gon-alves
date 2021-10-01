@@ -1,0 +1,169 @@
+Sintaxe da criação um objeto
+
+        const instrutora = {
+        nome: 'Amanda Rangel',
+        idade: 27,
+        email: 'mandinha_rock@gmail.com'
+        }
+
+        const instrutora = {
+        nome: 'Chijo',
+        frontender: true,
+        responsabilidades: ["Dar aula","Criar novas aulas","Causar"],
+        contaPiada: () => {
+        console.log("É pa ver ou pa comer?")
+        }
+        }
+
+Estrutura padrão de um objeto
+
+        declaração com let ou const
+        seguido do nome do objeto
+        |
+        |      atribuição de valor com o sinal de =                  
+        |           |
+        |           |
+        const objeto ={  -----------------------------> abertura de chaves logo após o =
+        primeiraPropriedade: "Valor", -------------------> propriedades separadas por vírgula
+        segundaPropriedade: "Valor"   
+        }
+
+                        |
+                        |
+                        |
+                        |
+        chave e valor separados por dois pontos 
+
+
+
+Acessando objetos dentro de objetos
+
+        const paiDePet = {
+            nome: "Caio Teixeira",
+            pet: {
+                nome: "Lupin",
+                raca: "Salsicha",
+                idade: 1
+                }
+        }
+
+        const pet = paiDePet.pet
+        console.log(pet)
+        const nomeDoPet = pet.nome
+        console.log(nomeDoPet)
+
+
+        const paiDePet = {
+            nome: "Caio Teixeira",
+            pet: {
+                nome: "Lupin",
+                raca: "Salsicha",
+                idade: 1
+                }
+            }
+
+            const nomePet = paiDePet.pet.nome
+            console.log(nomePet)
+
+Acessando arrays dentro de objetos
+            const curso = {
+                    nome: "Noturno Frontend",
+                    linguagens: ["JS", "CSS", "HTML"]
+                }
+
+         const primeiraLinguagem = curso.linguagens[0]
+         console.log(primeiraLinguagem)
+
+
+             const curso = {
+                        nome: "Noturno Frontend",
+                        linguagens: ["JS", "CSS", "HTML"]
+                    } 
+
+            const linguagens = curso.linguagens
+            console.log(linguagens)
+            const primeiraLinguagem = linguagens[0]
+            console.log(primeiraLinguagem)
+
+
+Array de objetos
+        const instrutoras = [
+            {nome: "Lais", modulo: 1},
+            {nome: "Amanda",modulo: 2},
+            {nome: "Chijo",modulo: 3}
+        ]
+
+    const nomeInstrutora = instrutoras[0].nome
+    console.log(nomeInstrutora) 
+
+
+EXERCICIOS FEITOS EM AULA 
+
+
+const filme = {
+    direcao: 'Martha Cristiny',
+    nomeDoFilme: 'Amor de verão',
+    elenco: ['pessoa1', 'pessoa2', 'pessoa3', 'pessoa4', 'pessoa5'],
+    anoDeLancamento: 1999,
+    figurinista: 'martha avelar',
+    assitido: true,
+
+}
+
+console.log(filme.direcao, filme.nomeDoFilme, filme.elenco, filme['anoDeLancamento'], filme['figurinista'], filme['assitido'])
+console.log(filme.elenco[0], filme.elenco[1], filme.elenco[2],  filme.elenco[3], filme.elenco[4])
+
+filme.elenco[0] = 'xuxa'
+
+console.log(`O nome do filme é ${filme.nomeDoFilme}. Seus personagens são ${filme.elenco[0]}, ${filme.elenco[1]}, ${filme.elenco[2]}, ${filme.elenco[3]}, ${filme.elenco[4]} `)
+
+
+
+
+
+const pessoa = {
+    nome: 'Martha',
+    idade: 22,
+    gêneroMusicalPreferido: 'indie',
+
+}
+
+console.log(`O nome da pessoa é ${pessoa.nome}, ela tem ${pessoa.idade} de idade e gosta muito de musica ${pessoa.gêneroMusicalPreferido}`)
+
+
+const recebendoObj = (Obj) =>{
+        const addItensObjs = {
+            ...Obj,
+            comidasFavoritas: [
+                'camarao',
+                'strogonoff de frango',
+                'pure de abobora com carne moida',
+                'pure de batata com frango',
+                'churrasco',
+        ],
+            nomeMelhorAmiga: 'Gabriella',
+            idadeMelhorAmiga: 23,
+
+
+        }
+
+        console.log(`O nome da pessoa é ${addItensObjs.nome} e suas comidas preferidas são ${addItensObjs.comidasFavoritas[0]},
+        ${addItensObjs.comidasFavoritas[1]}, ${addItensObjs.comidasFavoritas[2]}, ${addItensObjs.comidasFavoritas[3]}.
+        Seu melhor amigo se chama ${addItensObjs.nomeMelhorAmiga} e ela tem ${addItensObjs.idadeMelhorAmiga} anos`)
+}
+
+
+const eviandoListaPessoa = {
+     nome: 'Martha',
+     idade: 21,
+     corPreferida: 'amarela',
+     comidaPreferida: 'camarao',
+}
+
+recebendoObj(eviandoListaPessoa)
+
+
+
+
+
+
