@@ -1,42 +1,30 @@
-Alunos(as), sejam bem-vindos(as)!
+# Rodada de cases
+## Lista de cases feitos
 
-Esse repositório vai acompanhar vocês até o final do curso, para mantermos a organização, sugerimos que vocês sigam a seguinte estrutura:
+| Plugin | README | CASE
+| ------ | ------ | ------ |
+| Brainn 🇧🇷 (React + Typescript opcional)  | https://github.com/brainnco-exs/readme-frontend | loteria-case
+| iCasei 🇧🇷 (Qualquer Framework de Front))  | https://github.com/icasei/teste-front-end |youtube-case
+| Chama 🇳🇱 (React)  | https://github.com/chamatheapp/chama-frontend-assignment/ |github-case
 
-```
-.
-├── semana-0
-│   ├── aula1
-│   ├── aula2
-│   └── projeto-nome
-|
-├── semana-1
-│   ├── aula3
-│   ├── aula4
-│   ├── aula5
-│   ├── aula6
-│   └── projeto-nome
-|
-├── semana-2
-│   ├── aula7
-│   ├── aula8
-│   ├── aula9
-│   ├── aula10
-│   └── projeto-nome
-|
-├── semana-3
-│   ├── aula11
-│   ├── aula12
-│   ├── aula13
-│   ├── aula14
-│   └── projeto-nome
-|
-├── semana-4
-│   ├── aula15
-│   ├── aula16
-│   ├── aula17
-│   ├── aula18
-│   └── projeto-nome
-|
-```
+## Descrição
 
-Uma pasta para cada semana, dentro delas uma pasta para cada dia de aula e por fim uma pasta para o projeto da semana.
+- loteria-case
+-- Lista de Loterias
+-- Lista de resultados de cada loteria
+-- Temas de cada concurso
+-- Tudo é exibido na UI
+
+- youtube-case
+-- Lista de vídeos buscados
+-- Informações sobre os vídeos buscados
+-- Detalhes de um vídeo clicado
+-- Tudo com exceção do detalhes de um vídeo é mostrado na UI, já os detalhes é exibido no console.
+
+- github-case
+-- Repositorio pesquisado
+-- Informações sobre o repositório buscado
+-- Página de detalhes de pesquisas realizadas com a possibilidade de apagar as pesquisas, os dados são persistidos.
+-- Tudo é exbido visualmente na UI.
+
+
